@@ -1,0 +1,33 @@
+
+package fagod;
+
+import java.util.Scanner;
+
+public class proletarietario {
+    public static void main (String[] args){
+    Scanner entrada = new Scanner (System.in);
+    double salario = 1000.00;
+    int carros = 0;
+    
+    System.out.println("Informe quantos carros foram vendidos");
+    carros = entrada.nextInt();
+   
+   
+    if (carros<=5){
+        carros = carros*500;
+        salario = salario+carros;
+        System.out.println("Valor do salario com a comissão: "+ salario);
+    }
+    
+    else{
+        carros = carros*1000;
+        salario = salario+carros;
+        System.out.println("Valor do salario com a comissão: "+ salario);
+    }
+    
+    
+    
+    
+}
+    
+}
